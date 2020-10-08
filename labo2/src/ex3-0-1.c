@@ -14,7 +14,7 @@ void display_bin_to_dec(int binary_number[])
 
     for (int i=0; i<TAB_SIZE; i++)
     {
-        result = result + binary_number[i] * pow(2, exponent);
+        result = result + binary_number[i] * pow(2,exponent);
         exponent = exponent - 1;
     }
     printf("%d\n", result);

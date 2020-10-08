@@ -6,8 +6,8 @@ bool isPalindrome(char str[], int size);
 
 bool isPalindrome(char str[], int size)
 {
-    int j = 0;
     int i = size - 2;
+    int j = 0;
     char reversed_str[size];
 
     strcpy(reversed_str, str);
