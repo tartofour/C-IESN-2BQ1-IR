@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-# define TAB_SIZE_MAX 4
+#define TAB_SIZE_MAX 4
 
 int tab_values_sum(int tab[], int tab_size);
 
