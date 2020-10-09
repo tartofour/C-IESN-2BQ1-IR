@@ -19,7 +19,5 @@ int main(void)
     }
 
     if (!is_divider_found)
-    {
         printf("This is a prime number !\n");
-    }
 }
