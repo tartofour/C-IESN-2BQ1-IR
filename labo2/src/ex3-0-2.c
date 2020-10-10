@@ -9,9 +9,8 @@ int tab_values_sum(int tab[], int tab_size)
     int result = 0;
 
     for (int i=0; i<tab_size; i++)
-    {
         result = result + tab[i];
-    }
+    
     return result;
 }
 

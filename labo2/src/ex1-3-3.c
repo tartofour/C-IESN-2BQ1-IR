@@ -8,7 +8,7 @@ int main(void)
     int random_number = rand();
     int is_divider_found = 0;
     
-    while (!is_divider_found && i<=(int) sqrt(random_number)+1)
+    while (!is_divider_found && i <= (int) sqrt(random_number)+1)
     {
         if (random_number % i == 0)
         {

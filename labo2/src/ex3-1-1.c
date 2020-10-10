@@ -9,9 +9,8 @@ void display_capitalized_string(char word[], int size)
     char capitalized_word[size];
 
     for (int i=0; i<size; i++)
-    {
         capitalized_word[i] = word[i] - 32;
-    }
+    
     printf("%s\n", capitalized_word);
 }
 

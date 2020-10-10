@@ -10,12 +10,8 @@ bool isPalindrome(char str[], int size)
     int j = 0;
     char reversed_str[size];
 
-    strcpy(reversed_str, str);
-
     for (i, j; i>=0; i--, j++)
-        {
-            reversed_str[j] = str[i];
-        }
+        reversed_str[j] = str[i];
 
     reversed_str[size] = '\0';
     return strcmp(reversed_str,str) == 0;
@@ -23,7 +19,7 @@ bool isPalindrome(char str[], int size)
 
 int main(void)
 {
-    char name[] = "kayak";
+    char name[] = "kaaaayaaaak";
     int size = strlen(name)+1;
     printf("%d\n", isPalindrome(name, size));
 }
