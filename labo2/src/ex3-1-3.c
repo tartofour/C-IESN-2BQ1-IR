@@ -7,11 +7,11 @@ bool isPalindrome(char str[], int size);
 bool isPalindrome(char str[], int size)
 {
     char reversed_str[size];
-    int i = size - 2;
-    int j = 0;
+    int i = 0;
+    int j = size - 2;
 
-    for (i, j; i>=0; i--, j++)
-        reversed_str[j] = str[i];
+    for (i, j; j>=0; i++, j--)
+        reversed_str[i] = str[j];
 
     reversed_str[size] = '\0';
     return strcmp(reversed_str,str) == 0;
