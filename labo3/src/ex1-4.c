@@ -24,5 +24,5 @@ struct dog
 
 int main(void)
 {
-    struct person person1 = {"Benjamin", "Verjus", "Rue d'Esch sur Alzette, 17, 4000 Liège", {7, 4, 1992}};
+    struct person person1 = {"John", "Doe", "Rue de la résistance, 17, 4000 Liège", {17, 2, 1987}};
 }
