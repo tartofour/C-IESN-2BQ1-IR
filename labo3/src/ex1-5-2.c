@@ -14,4 +14,4 @@ int main(void)
     int Date;
 }
 
-// Aucune erreur n'est levée, attention aux ambiguités.
+// Aucune erreur, attention aux ambiguités.

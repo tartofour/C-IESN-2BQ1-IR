@@ -7,5 +7,5 @@ int main(void)
 
     printf("Adresse de a : %x\n", &a);
     printf("Adresse de b : %x\n", &b);
-    // On constate ici que les deux adresse sont décalées de 1 octet (soit le sizeof(char)).
+    // On constate ici que les deux adresses sont décalées de 1 octet (soit le sizeof(char)).
 }
