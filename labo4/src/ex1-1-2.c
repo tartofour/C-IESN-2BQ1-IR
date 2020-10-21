@@ -12,5 +12,4 @@ int main(void)
     int * pLast_elmt = last_tab_elmt(tableau, size_tableau);
     
     printf("Adresse du dernier élément du tableau : %x\n", pLast_elmt);
-
 }
