@@ -1,8 +1,17 @@
+#include <stdio.h>
+
 int main(void)
 {
-    int i = 12;
-    int *pI = &i;
-    int **ppI = &pI;
+    int a = 12;
+    int b = 31;
 
-    // Il s'agit d'une variable de type double pointeur.
+    printf("Adresse de a : %x\n", &a);
+    printf("Adresse de b : %x\n", &b);
+
+    int * pA = &b + 1;
+    *pA = 100;  
+
+    printf("Adresse pointée par pA : %x\n", pA);
+    printf("Nouvelle valeur de a : %d\n", *pA);
 }
+
