@@ -7,9 +7,9 @@
 
 void printHelp(char * prgName)
 {
-    printf("Utilisation :");
+    printf("Utilisation : ");
     printf("%s OPTION [MSG] [L] \n", prgName);
-    printf("Affiche un mot de maximum %d caractère ou un caractères majuscule.\n", TAILLE_MAX);
+    printf("Affiche un mot de maximum %d caractères, un caractère majuscule ou l'addition de deux entiers non nuls.\n", TAILLE_MAX);
     printf("    -h,           affiche ce message\n");
     printf("    -e MSG,       affiche le message MSG\n");
     printf("    --maj L,      affiche la lettre L en majuscule\n");
@@ -25,6 +25,8 @@ void printError(char * prgName, char * errStr)
 int main(int argc, char * argv[])
 {
     int mode; // 0 -> -e ; 1 -> --maj ; 3 -> --add
+    int a;
+    int b;
     
     // Vérification des arguments
     
@@ -87,6 +89,7 @@ int main(int argc, char * argv[])
 
     else if (strcmp(argv[1], "--add") == 0)
     {
+
         if (argc != 4)
         {
             printError(argv[0], "nombre d'arguments pour l'option --add invalide");
@@ -94,8 +97,8 @@ int main(int argc, char * argv[])
         }
 
 
-        int a = atoi(argv[2]);
-        int b = atoi(argv[3]);
+        a = atoi(argv[2]);
+        b = atoi(argv[3]);
 
         if (a == 0 || b == 0)
         {
