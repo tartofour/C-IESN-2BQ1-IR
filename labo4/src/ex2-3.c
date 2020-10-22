@@ -56,7 +56,10 @@ int main(int argc, char * argv[])
             return EXIT_FAILURE;
         }
 
-        mode = 0; // -e
+        else
+        {
+            mode = 0; // -e
+        }
     }
 
     else if (strcmp(argv[1], "--maj") == 0)
