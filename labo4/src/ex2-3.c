@@ -24,7 +24,7 @@ void printError(char * prgName, char * errStr)
 
 int main(int argc, char * argv[])
 {
-    int mode; // 0 -> -e ; 1 -> --maj ; 3 -> --add
+    int mode; // 0 -> -e ; 1 -> --maj ; 2 -> --add
     int a;
     int b;
     
@@ -56,7 +56,7 @@ int main(int argc, char * argv[])
             return EXIT_FAILURE;
         }
 
-        mode = 0;
+        mode = 0; // -e
     }
 
     else if (strcmp(argv[1], "--maj") == 0)
@@ -82,10 +82,9 @@ int main(int argc, char * argv[])
         
         else
         {
-            mode = 1;
+            mode = 1; // --maj
         }
     }
-
 
     else if (strcmp(argv[1], "--add") == 0)
     {
@@ -95,7 +94,6 @@ int main(int argc, char * argv[])
             printError(argv[0], "nombre d'arguments pour l'option --add invalide");
             return EXIT_FAILURE;
         }
-
 
         a = atoi(argv[2]);
         b = atoi(argv[3]);
@@ -108,10 +106,9 @@ int main(int argc, char * argv[])
 
         else
         {
-            mode = 2;
+            mode = 2; // --add
         }
     }
-
     
     else 
     {
@@ -119,8 +116,8 @@ int main(int argc, char * argv[])
         return EXIT_FAILURE;
     }
 
-    //Exécution du programme
-
+    // Exécution du programme
+    
     switch(mode)
     {
         // -e
@@ -138,5 +135,4 @@ int main(int argc, char * argv[])
             printf("%d\n", a + b);
             return EXIT_SUCCESS;
     }
-
 }
