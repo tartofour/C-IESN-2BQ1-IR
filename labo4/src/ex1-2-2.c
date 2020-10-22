@@ -8,9 +8,9 @@ char * find_char(char * string, char character)
     while (*(string + i) != '\0')
     {
         if (*(string + i) == character)
-	{   
-	    pChar = string + i;
-    	    return pChar;
+    	{   
+	        pChar = string + i;
+   	        return pChar;
     	}
     	i++;
     }

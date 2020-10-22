@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 typedef struct chien 
-    {
-	int age;
-    	double poids;
-    } Chien;
+{
+  	int age;
+   	double poids;
+} Chien;
 
 double changerPoids(struct chien * c, double poids)
 {

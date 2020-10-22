@@ -7,9 +7,10 @@ void caesar_encrypt(char * plaintext, int rot)
     while (*(plaintext + i) != '\0')
     {
     	*(plaintext + i) += rot;
-	i++;
+	    i++;
     }
 }
+
 int main(void)
 {
     char message[] = {"Il faut rafraichir les maquignons"};
