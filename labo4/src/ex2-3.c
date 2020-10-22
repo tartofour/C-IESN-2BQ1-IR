@@ -115,7 +115,7 @@ int main(int argc, char * argv[])
     
     else 
     {
-        printError(argv[0], "-e ou --maj requis");
+        printError(argv[0], "-e, --maj ou --add requis");
         return EXIT_FAILURE;
     }
 
