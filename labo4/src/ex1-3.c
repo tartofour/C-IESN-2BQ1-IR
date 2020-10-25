@@ -9,7 +9,7 @@ typedef struct chien
 double changerPoids(struct chien * c, double poids)
 {
     double ancien_poids = c->poids;
-    c->poids = 10.223;
+    c->poids = poids;
 
     return ancien_poids;
 }
@@ -26,7 +26,7 @@ int main(void)
     Chien chien1 = {5, 11.984};
     printf("Âge de chien1 : %d\n", chien1.age);
     printf("Poids de chien1: %.3f Kg\n", chien1.poids);
-    changerPoids(&chien1, chien1.poids);
+    changerPoids(&chien1, 55);
     printf("Nouveau poids de chien1: %.3f Kg\n", chien1.poids);
 
     // Copie d'un chien
