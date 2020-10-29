@@ -18,8 +18,5 @@ int main(int argc, char * argv[])
         strcpy(new_argv[i], argv[i]); 
         printf("Valeur de new_argv[%d] : %s\n", i,  new_argv[i]);
     }
-
-
-
 }
 
