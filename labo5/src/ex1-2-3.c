@@ -16,5 +16,5 @@ int main(void)
     printf("valeur de nb2 : %d\n", *nb2);
 }
 
-// On obtient bien la même adresse, mais la valeur contenue à cette adresse mémoire a changée.
+// On obtient bien la même adresse, mais la valeur contenue à cette adresse a changée.
 
