@@ -7,11 +7,12 @@ int main(void)
 
     printf("Adresse de a : %x\n", &a);
     printf("Adresse de b : %x\n", &b);
+    printf("Valeur de b : %d\n", b);
 
-    int * pA = &b + 1;
-    *pA = 100;  
+    int * pB = &a + 1;
+    *pB = 100;  
 
-    printf("Adresse pointée par pA : %x\n", pA);
-    printf("Nouvelle valeur de a : %d\n", *pA);
+    printf("Adresse pointée par pB : %x\n", pB);
+    printf("Nouvelle valeur de b : %d\n", b);
 }
 

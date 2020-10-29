@@ -3,7 +3,7 @@
 
 double pow(double, double);
 
-int afficherResultat(double (*pF)(double, double), int a, int b)
+int afficherResultat(double (*pF)(double, double), double a, double b)
 {
     double resultat = (*pF)(a, b);
     printf("%f\n", resultat);

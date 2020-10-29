@@ -3,6 +3,7 @@
 int main(void)
 {
     int tab[3];
+
     *tab = 1;
     *(tab+1) = 2;
     *(tab+2) = 3;

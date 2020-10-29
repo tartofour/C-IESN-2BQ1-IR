@@ -12,5 +12,5 @@ int main(void)
 
     // Nous constatons qu'il y a dépassement de la limite d'un char (-127 -> 127). 
     // Un pointeur doit toujours être du même type que la variable qu'il pointe. 
-    // Sinon, le type associé au pointeur va modifier le type de la variable et créer un comportement bizarre.
+    // Sinon, la valeur va être mal interprété et créer un comportement bizarre.
 }

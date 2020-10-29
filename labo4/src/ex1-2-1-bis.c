@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-void caesar_encrypt(char * plaintext, int rot)
+void caesar_encrypt(char plaintext[], int rot)
 {
     int i = 0;
 
-    while (plaintext[i] != '\0')
+    while (*(plaintext + i) != '\0')
     {
-    	plaintext[i] += rot;
+    	*(plaintext + i) += rot;
 	    i++;
     }
 }

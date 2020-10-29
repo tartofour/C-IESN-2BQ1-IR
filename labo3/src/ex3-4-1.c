@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void new_value(int * a, int new_value)
+void double_value(int * a)
 {
-    *a = new_value;
+    *a = *a * 2;
 }
 
 int main(void)
@@ -10,6 +10,6 @@ int main(void)
     int number = 4;
     printf("Valeur : %d\n", number);
 
-    new_value(&number, 18);
+    double_value(&number);
     printf("Nouvelle valeur : %d\n", number);
 }

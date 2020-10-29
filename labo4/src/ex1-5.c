@@ -1,20 +1,32 @@
 #include <stdio.h>
+#include <string.h>
+#define SIZE 3
 
-void affiche_plateau(char ** plateau)
+// À REFAIRE
+
+void affiche_plateau(char * p)
 {
-    int i;
-   
-    printf(" %c  %c  %c ", plateau[0][0], plateau[0][1], plateau[0][2]);
-}
+    
+
+    for (int i=0; i<9; i++) 
+        {
+            
+            printf(" %c ", *(p+i));
+            if (i == 2 | i == 5 | i == 8)
+                printf("\n");
+        }
+}   
 
 
 int main(void)
 {
-    char plateau[3][3] = {{"aaa"},
-        	    		  {"aaa"},
-		            	  {"aaa"}};
+    char plateau[3][3] = {{'a', 'z', 'e'},
+        	    		  {'a', 'l', 'a'},
+		            	  {'t', 'e', 'a'}};
 
-    affiche_plateau(plateau);
+    
+    affiche_plateau(*plateau);
+ 
 }
 
 
