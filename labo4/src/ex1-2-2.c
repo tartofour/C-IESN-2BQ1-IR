@@ -23,5 +23,4 @@ int main(void)
     char * pChar = find_char("Hello world", 'w');
 
     printf("Adresse du caractère : %x\n", pChar);
-    printf("Reste de la chaine : %c\n", *pChar);
 }
