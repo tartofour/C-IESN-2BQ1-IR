@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-char * cutflush_str(char str[])
+char * cutflush_str(char * str)
 {
     int length = strlen(str) + 1;
     
-    char * resized_str = (char *) realloc(str, length);
-    return resized_str;
+    str = (char *) realloc(str, length);
+    return str;
 }
 
 int main(void)
@@ -16,4 +16,5 @@ int main(void)
     char * str = (char *) malloc(sizeof(char) * 200);
     strcpy(str,msg);
     str = cutflush_str(str);
+    free(str);
 }

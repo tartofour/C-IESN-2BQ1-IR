@@ -11,13 +11,14 @@ int main(int argc, char * argv[])
 
     // Copie de argv
     char ** new_argv = (char **) calloc(argc, sizeof(char *));
-
     for (int i=0; i<argc; i++)
     {
         new_argv[i] = (char *) calloc(strlen(argv[i])+1, sizeof(char));
-
         strcpy(new_argv[i], argv[i]); 
         printf("Valeur de new_argv[%d] : %s\n", i,  new_argv[i]);
     }
+
+    free(new_argc);
+    free(new_argv);
 }
 

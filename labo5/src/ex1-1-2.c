@@ -14,6 +14,6 @@ int main(void)
 {
     char msg[] = "Bonjour";
     char * new_msg = copy_str(msg);
-
     printf("%s\n", new_msg);
+    free(new_msg);
 }

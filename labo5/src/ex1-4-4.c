@@ -5,4 +5,5 @@ int main(void)
 {
     double * ptr = NULL;
     ptr = (double *) realloc(ptr, sizeof(double));
+    free(ptr);
 }

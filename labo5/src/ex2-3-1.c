@@ -13,15 +13,18 @@ void printFile(char * filename)
     else
     {
         char c = fgetc(file);
+
         while (c != EOF)
         {
             printf("%c", c);
             c = fgetc(file);
-        }
+        }   
+
+        fclose(file);
     }
 }
 
 int main(void)
 {
-    printFile("test.txt");    
+    printFile("ex2-3-1.txt"); 
 }
