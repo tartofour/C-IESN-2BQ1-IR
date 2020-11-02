@@ -34,7 +34,7 @@ int main(int argc, char * argv[])
 {
     // Vérification des arguments
  
- if (strcmp(argv[1], "-h") == 0)
+    if (strcmp(argv[1], "-h") == 0)
     {
        printHelp(argv[0]);
        return EXIT_SUCCESS;
