@@ -20,5 +20,4 @@ int main(void)
     printf("Ciphertext : %s\n", message);
     caesar_encrypt(message, -13);
     printf("Plaintext : %s\n", message);
-
 }
